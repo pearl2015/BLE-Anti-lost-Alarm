@@ -1,0 +1,1192 @@
+Archive member included because of file (symbol)
+
+c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-__atexit.o)
+                              c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o (__register_exitproc)
+c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-errno.o)
+                              obj/syscall.o (__errno)
+c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-exit.o)
+                              c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o (exit)
+c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-fini.o)
+                              c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o (__libc_fini_array)
+c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-impure.o)
+                              c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-__atexit.o) (_global_impure_ptr)
+c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-init.o)
+                              c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o (__libc_init_array)
+c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-memcpy.o)
+                              obj/ble_advdata.o (memcpy)
+c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-memset.o)
+                              c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o (memset)
+c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strlen.o)
+                              obj/ble_srv_common.o (strlen)
+c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strncpy.o)
+                              obj/ble_debug_assert_handler.o (strncpy)
+c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-__call_atexit.o)
+                              c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-exit.o) (__call_exitprocs)
+c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-atexit.o)
+                              c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-__call_atexit.o) (atexit)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x00016000         0x0002a000         xr
+RAM              0x20002000         0x00002000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crti.o
+LOAD c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtbegin.o
+LOAD c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+LOAD obj/main.o
+LOAD obj/syscall.o
+LOAD obj/ble_srv_common.o
+LOAD obj/ble_advdata.o
+LOAD obj/softdevice_handler.o
+LOAD obj/ble_debug_assert_handler.o
+LOAD obj/system_nrf51.o
+LOAD obj/gcc_startup_nrf51.o
+START GROUP
+LOAD C:\GNUARM/lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a
+LOAD c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a
+END GROUP
+LOAD c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtend.o
+LOAD c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtn.o
+
+.text           0x00016000     0x26e0
+ *(.Vectors)
+ .Vectors       0x00016000       0xc0 obj/gcc_startup_nrf51.o
+                0x00016000                __Vectors
+ *(.text*)
+ .text          0x000160c0        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crti.o
+ .text          0x000160c0       0x60 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtbegin.o
+ .text          0x00016120       0x74 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+                0x00016120                _start
+                0x00016120                start
+                0x00016120                _mainCRTStartup
+ .text          0x00016194        0x0 obj/main.o
+ .text.sd_ble_gap_address_set
+                0x00016194        0x8 obj/main.o
+ .text.sd_ble_gap_address_get
+                0x0001619c        0x8 obj/main.o
+ .text.sd_ble_gap_adv_data_set
+                0x000161a4        0x8 obj/main.o
+ .text.sd_ble_gap_adv_start
+                0x000161ac        0x8 obj/main.o
+ .text.sd_ble_gap_adv_stop
+                0x000161b4        0x8 obj/main.o
+ .text.sd_ble_gap_conn_param_update
+                0x000161bc        0x8 obj/main.o
+ .text.sd_ble_gap_disconnect
+                0x000161c4        0x8 obj/main.o
+ .text.sd_ble_gap_tx_power_set
+                0x000161cc        0x8 obj/main.o
+ .text.sd_ble_gap_appearance_set
+                0x000161d4        0x8 obj/main.o
+ .text.sd_ble_gap_appearance_get
+                0x000161dc        0x8 obj/main.o
+ .text.sd_ble_gap_ppcp_set
+                0x000161e4        0x8 obj/main.o
+ .text.sd_ble_gap_ppcp_get
+                0x000161ec        0x8 obj/main.o
+ .text.sd_ble_gap_device_name_set
+                0x000161f4        0x8 obj/main.o
+ .text.sd_ble_gap_device_name_get
+                0x000161fc        0x8 obj/main.o
+ .text.sd_ble_gap_authenticate
+                0x00016204        0x8 obj/main.o
+ .text.sd_ble_gap_sec_params_reply
+                0x0001620c        0x8 obj/main.o
+ .text.sd_ble_gap_auth_key_reply
+                0x00016214        0x8 obj/main.o
+ .text.sd_ble_gap_sec_info_reply
+                0x0001621c        0x8 obj/main.o
+ .text.sd_ble_gap_conn_sec_get
+                0x00016224        0x8 obj/main.o
+ .text.sd_ble_gap_rssi_start
+                0x0001622c        0x8 obj/main.o
+ .text.sd_ble_gap_rssi_stop
+                0x00016234        0x8 obj/main.o
+ .text.sd_ble_l2cap_cid_register
+                0x0001623c        0x8 obj/main.o
+ .text.sd_ble_l2cap_cid_unregister
+                0x00016244        0x8 obj/main.o
+ .text.sd_ble_l2cap_tx
+                0x0001624c        0x8 obj/main.o
+ .text.sd_ble_gattc_primary_services_discover
+                0x00016254        0x8 obj/main.o
+ .text.sd_ble_gattc_relationships_discover
+                0x0001625c        0x8 obj/main.o
+ .text.sd_ble_gattc_characteristics_discover
+                0x00016264        0x8 obj/main.o
+ .text.sd_ble_gattc_descriptors_discover
+                0x0001626c        0x8 obj/main.o
+ .text.sd_ble_gattc_char_value_by_uuid_read
+                0x00016274        0x8 obj/main.o
+ .text.sd_ble_gattc_read
+                0x0001627c        0x8 obj/main.o
+ .text.sd_ble_gattc_char_values_read
+                0x00016284        0x8 obj/main.o
+ .text.sd_ble_gattc_write
+                0x0001628c        0x8 obj/main.o
+ .text.sd_ble_gattc_hv_confirm
+                0x00016294        0x8 obj/main.o
+ .text.sd_ble_gatts_service_add
+                0x0001629c        0x8 obj/main.o
+ .text.sd_ble_gatts_include_add
+                0x000162a4        0x8 obj/main.o
+ .text.sd_ble_gatts_characteristic_add
+                0x000162ac        0x8 obj/main.o
+ .text.sd_ble_gatts_descriptor_add
+                0x000162b4        0x8 obj/main.o
+ .text.sd_ble_gatts_value_set
+                0x000162bc        0x8 obj/main.o
+ .text.sd_ble_gatts_value_get
+                0x000162c4        0x8 obj/main.o
+ .text.sd_ble_gatts_hvx
+                0x000162cc        0x8 obj/main.o
+ .text.sd_ble_gatts_service_changed
+                0x000162d4        0x8 obj/main.o
+ .text.sd_ble_gatts_rw_authorize_reply
+                0x000162dc        0x8 obj/main.o
+ .text.sd_ble_gatts_sys_attr_set
+                0x000162e4        0x8 obj/main.o
+ .text.sd_ble_gatts_sys_attr_get
+                0x000162ec        0x8 obj/main.o
+ .text.sd_ble_enable
+                0x000162f4        0x8 obj/main.o
+ .text.sd_ble_evt_get
+                0x000162fc        0x8 obj/main.o
+ .text.sd_ble_tx_buffer_count_get
+                0x00016304        0x8 obj/main.o
+ .text.sd_ble_uuid_vs_add
+                0x0001630c        0x8 obj/main.o
+ .text.sd_ble_uuid_decode
+                0x00016314        0x8 obj/main.o
+ .text.sd_ble_uuid_encode
+                0x0001631c        0x8 obj/main.o
+ .text.sd_ble_version_get
+                0x00016324        0x8 obj/main.o
+ .text.sd_ble_user_mem_reply
+                0x0001632c        0x8 obj/main.o
+ .text.sd_ble_opt_set
+                0x00016334        0x8 obj/main.o
+ .text.sd_ble_opt_get
+                0x0001633c        0x8 obj/main.o
+ .text.NVIC_SystemReset
+                0x00016344       0x1c obj/main.o
+ .text.nrf_gpio_cfg_output
+                0x00016360       0x20 obj/main.o
+ .text.nrf_gpio_pin_set
+                0x00016380       0x20 obj/main.o
+ .text.sd_mutex_new
+                0x000163a0        0x8 obj/main.o
+ .text.sd_mutex_acquire
+                0x000163a8        0x8 obj/main.o
+ .text.sd_mutex_release
+                0x000163b0        0x8 obj/main.o
+ .text.sd_nvic_EnableIRQ
+                0x000163b8        0x8 obj/main.o
+ .text.sd_nvic_DisableIRQ
+                0x000163c0        0x8 obj/main.o
+ .text.sd_nvic_GetPendingIRQ
+                0x000163c8        0x8 obj/main.o
+ .text.sd_nvic_SetPendingIRQ
+                0x000163d0        0x8 obj/main.o
+ .text.sd_nvic_ClearPendingIRQ
+                0x000163d8        0x8 obj/main.o
+ .text.sd_nvic_SetPriority
+                0x000163e0        0x8 obj/main.o
+ .text.sd_nvic_GetPriority
+                0x000163e8        0x8 obj/main.o
+ .text.sd_nvic_SystemReset
+                0x000163f0        0x8 obj/main.o
+ .text.sd_nvic_critical_region_enter
+                0x000163f8        0x8 obj/main.o
+ .text.sd_nvic_critical_region_exit
+                0x00016400        0x8 obj/main.o
+ .text.sd_rand_application_pool_capacity_get
+                0x00016408        0x8 obj/main.o
+ .text.sd_rand_application_bytes_available_get
+                0x00016410        0x8 obj/main.o
+ .text.sd_rand_application_vector_get
+                0x00016418        0x8 obj/main.o
+ .text.sd_power_reset_reason_get
+                0x00016420        0x8 obj/main.o
+ .text.sd_power_reset_reason_clr
+                0x00016428        0x8 obj/main.o
+ .text.sd_power_mode_set
+                0x00016430        0x8 obj/main.o
+ .text.sd_power_system_off
+                0x00016438        0x8 obj/main.o
+ .text.sd_power_pof_enable
+                0x00016440        0x8 obj/main.o
+ .text.sd_power_pof_threshold_set
+                0x00016448        0x8 obj/main.o
+ .text.sd_power_ramon_set
+                0x00016450        0x8 obj/main.o
+ .text.sd_power_ramon_clr
+                0x00016458        0x8 obj/main.o
+ .text.sd_power_ramon_get
+                0x00016460        0x8 obj/main.o
+ .text.sd_power_gpregret_set
+                0x00016468        0x8 obj/main.o
+ .text.sd_power_gpregret_clr
+                0x00016470        0x8 obj/main.o
+ .text.sd_power_gpregret_get
+                0x00016478        0x8 obj/main.o
+ .text.sd_power_dcdc_mode_set
+                0x00016480        0x8 obj/main.o
+ .text.sd_clock_hfclk_request
+                0x00016488        0x8 obj/main.o
+ .text.sd_clock_hfclk_release
+                0x00016490        0x8 obj/main.o
+ .text.sd_clock_hfclk_is_running
+                0x00016498        0x8 obj/main.o
+ .text.sd_app_evt_wait
+                0x000164a0        0x8 obj/main.o
+ .text.sd_ppi_channel_enable_get
+                0x000164a8        0x8 obj/main.o
+ .text.sd_ppi_channel_enable_set
+                0x000164b0        0x8 obj/main.o
+ .text.sd_ppi_channel_enable_clr
+                0x000164b8        0x8 obj/main.o
+ .text.sd_ppi_channel_assign
+                0x000164c0        0x8 obj/main.o
+ .text.sd_ppi_group_task_enable
+                0x000164c8        0x8 obj/main.o
+ .text.sd_ppi_group_task_disable
+                0x000164d0        0x8 obj/main.o
+ .text.sd_ppi_group_assign
+                0x000164d8        0x8 obj/main.o
+ .text.sd_ppi_group_get
+                0x000164e0        0x8 obj/main.o
+ .text.sd_radio_notification_cfg_set
+                0x000164e8        0x8 obj/main.o
+ .text.sd_ecb_block_encrypt
+                0x000164f0        0x8 obj/main.o
+ .text.sd_evt_get
+                0x000164f8        0x8 obj/main.o
+ .text.sd_temp_get
+                0x00016500        0x8 obj/main.o
+ .text.sd_flash_write
+                0x00016508        0x8 obj/main.o
+ .text.sd_flash_page_erase
+                0x00016510        0x8 obj/main.o
+ .text.sd_flash_protect
+                0x00016518        0x8 obj/main.o
+ .text.sd_radio_session_open
+                0x00016520        0x8 obj/main.o
+ .text.sd_radio_session_close
+                0x00016528        0x8 obj/main.o
+ .text.sd_radio_request
+                0x00016530        0x8 obj/main.o
+ .text.sd_softdevice_enable
+                0x00016538        0x8 obj/main.o
+ .text.sd_softdevice_disable
+                0x00016540        0x8 obj/main.o
+ .text.sd_softdevice_is_enabled
+                0x00016548        0x8 obj/main.o
+ .text.sd_softdevice_vector_table_base_set
+                0x00016550        0x8 obj/main.o
+ .text.app_error_handler
+                0x00016558       0x18 obj/main.o
+                0x00016558                app_error_handler
+ .text.assert_nrf_callback
+                0x00016570       0x2c obj/main.o
+                0x00016570                assert_nrf_callback
+ .text.leds_init
+                0x0001659c       0x10 obj/main.o
+ .text.advertising_init
+                0x000165ac       0xb4 obj/main.o
+ .text.advertising_start
+                0x00016660       0x40 obj/main.o
+ .text.ble_stack_init
+                0x000166a0       0x78 obj/main.o
+ .text.power_manage
+                0x00016718       0x30 obj/main.o
+ .text.clock_init
+                0x00016748       0x38 obj/main.o
+                0x00016748                clock_init
+ .text.main     0x00016780       0x20 obj/main.o
+                0x00016780                main
+ .text          0x000167a0        0x0 obj/syscall.o
+ .text._read_r  0x000167a0       0x24 obj/syscall.o
+                0x000167a0                _read_r
+ .text._lseek_r
+                0x000167c4       0x18 obj/syscall.o
+                0x000167c4                _lseek_r
+ .text._write_r
+                0x000167dc       0x18 obj/syscall.o
+                0x000167dc                _write_r
+ .text._close_r
+                0x000167f4       0x14 obj/syscall.o
+                0x000167f4                _close_r
+ .text._sbrk_r  0x00016808       0x5c obj/syscall.o
+                0x00016808                _sbrk_r
+ .text._fstat_r
+                0x00016864       0x2c obj/syscall.o
+                0x00016864                _fstat_r
+ .text._isatty_r
+                0x00016890       0x14 obj/syscall.o
+                0x00016890                _isatty_r
+ .text._exit    0x000168a4        0xc obj/syscall.o
+                0x000168a4                _exit
+ .text          0x000168b0        0x0 obj/ble_srv_common.o
+ .text.sd_ble_gap_address_set
+                0x000168b0        0x8 obj/ble_srv_common.o
+ .text.sd_ble_gap_address_get
+                0x000168b8        0x8 obj/ble_srv_common.o
+ .text.sd_ble_gap_adv_data_set
+                0x000168c0        0x8 obj/ble_srv_common.o
+ .text.sd_ble_gap_adv_start
+                0x000168c8        0x8 obj/ble_srv_common.o
+ .text.sd_ble_gap_adv_stop
+                0x000168d0        0x8 obj/ble_srv_common.o
+ .text.sd_ble_gap_conn_param_update
+                0x000168d8        0x8 obj/ble_srv_common.o
+ .text.sd_ble_gap_disconnect
+                0x000168e0        0x8 obj/ble_srv_common.o
+ .text.sd_ble_gap_tx_power_set
+                0x000168e8        0x8 obj/ble_srv_common.o
+ .text.sd_ble_gap_appearance_set
+                0x000168f0        0x8 obj/ble_srv_common.o
+ .text.sd_ble_gap_appearance_get
+                0x000168f8        0x8 obj/ble_srv_common.o
+ .text.sd_ble_gap_ppcp_set
+                0x00016900        0x8 obj/ble_srv_common.o
+ .text.sd_ble_gap_ppcp_get
+                0x00016908        0x8 obj/ble_srv_common.o
+ .text.sd_ble_gap_device_name_set
+                0x00016910        0x8 obj/ble_srv_common.o
+ .text.sd_ble_gap_device_name_get
+                0x00016918        0x8 obj/ble_srv_common.o
+ .text.sd_ble_gap_authenticate
+                0x00016920        0x8 obj/ble_srv_common.o
+ .text.sd_ble_gap_sec_params_reply
+                0x00016928        0x8 obj/ble_srv_common.o
+ .text.sd_ble_gap_auth_key_reply
+                0x00016930        0x8 obj/ble_srv_common.o
+ .text.sd_ble_gap_sec_info_reply
+                0x00016938        0x8 obj/ble_srv_common.o
+ .text.sd_ble_gap_conn_sec_get
+                0x00016940        0x8 obj/ble_srv_common.o
+ .text.sd_ble_gap_rssi_start
+                0x00016948        0x8 obj/ble_srv_common.o
+ .text.sd_ble_gap_rssi_stop
+                0x00016950        0x8 obj/ble_srv_common.o
+ .text.ble_srv_report_ref_encode
+                0x00016958       0x90 obj/ble_srv_common.o
+                0x00016958                ble_srv_report_ref_encode
+ .text.ble_srv_ascii_to_utf8
+                0x000169e8       0x28 obj/ble_srv_common.o
+                0x000169e8                ble_srv_ascii_to_utf8
+ .text          0x00016a10        0x0 obj/ble_advdata.o
+ .text.sd_ble_gap_address_set
+                0x00016a10        0x8 obj/ble_advdata.o
+ .text.sd_ble_gap_address_get
+                0x00016a18        0x8 obj/ble_advdata.o
+ .text.sd_ble_gap_adv_data_set
+                0x00016a20        0x8 obj/ble_advdata.o
+ .text.sd_ble_gap_adv_start
+                0x00016a28        0x8 obj/ble_advdata.o
+ .text.sd_ble_gap_adv_stop
+                0x00016a30        0x8 obj/ble_advdata.o
+ .text.sd_ble_gap_conn_param_update
+                0x00016a38        0x8 obj/ble_advdata.o
+ .text.sd_ble_gap_disconnect
+                0x00016a40        0x8 obj/ble_advdata.o
+ .text.sd_ble_gap_tx_power_set
+                0x00016a48        0x8 obj/ble_advdata.o
+ .text.sd_ble_gap_appearance_set
+                0x00016a50        0x8 obj/ble_advdata.o
+ .text.sd_ble_gap_appearance_get
+                0x00016a58        0x8 obj/ble_advdata.o
+ .text.sd_ble_gap_ppcp_set
+                0x00016a60        0x8 obj/ble_advdata.o
+ .text.sd_ble_gap_ppcp_get
+                0x00016a68        0x8 obj/ble_advdata.o
+ .text.sd_ble_gap_device_name_set
+                0x00016a70        0x8 obj/ble_advdata.o
+ .text.sd_ble_gap_device_name_get
+                0x00016a78        0x8 obj/ble_advdata.o
+ .text.sd_ble_gap_authenticate
+                0x00016a80        0x8 obj/ble_advdata.o
+ .text.sd_ble_gap_sec_params_reply
+                0x00016a88        0x8 obj/ble_advdata.o
+ .text.sd_ble_gap_auth_key_reply
+                0x00016a90        0x8 obj/ble_advdata.o
+ .text.sd_ble_gap_sec_info_reply
+                0x00016a98        0x8 obj/ble_advdata.o
+ .text.sd_ble_gap_conn_sec_get
+                0x00016aa0        0x8 obj/ble_advdata.o
+ .text.sd_ble_gap_rssi_start
+                0x00016aa8        0x8 obj/ble_advdata.o
+ .text.sd_ble_gap_rssi_stop
+                0x00016ab0        0x8 obj/ble_advdata.o
+ .text.sd_ble_l2cap_cid_register
+                0x00016ab8        0x8 obj/ble_advdata.o
+ .text.sd_ble_l2cap_cid_unregister
+                0x00016ac0        0x8 obj/ble_advdata.o
+ .text.sd_ble_l2cap_tx
+                0x00016ac8        0x8 obj/ble_advdata.o
+ .text.sd_ble_gattc_primary_services_discover
+                0x00016ad0        0x8 obj/ble_advdata.o
+ .text.sd_ble_gattc_relationships_discover
+                0x00016ad8        0x8 obj/ble_advdata.o
+ .text.sd_ble_gattc_characteristics_discover
+                0x00016ae0        0x8 obj/ble_advdata.o
+ .text.sd_ble_gattc_descriptors_discover
+                0x00016ae8        0x8 obj/ble_advdata.o
+ .text.sd_ble_gattc_char_value_by_uuid_read
+                0x00016af0        0x8 obj/ble_advdata.o
+ .text.sd_ble_gattc_read
+                0x00016af8        0x8 obj/ble_advdata.o
+ .text.sd_ble_gattc_char_values_read
+                0x00016b00        0x8 obj/ble_advdata.o
+ .text.sd_ble_gattc_write
+                0x00016b08        0x8 obj/ble_advdata.o
+ .text.sd_ble_gattc_hv_confirm
+                0x00016b10        0x8 obj/ble_advdata.o
+ .text.sd_ble_gatts_service_add
+                0x00016b18        0x8 obj/ble_advdata.o
+ .text.sd_ble_gatts_include_add
+                0x00016b20        0x8 obj/ble_advdata.o
+ .text.sd_ble_gatts_characteristic_add
+                0x00016b28        0x8 obj/ble_advdata.o
+ .text.sd_ble_gatts_descriptor_add
+                0x00016b30        0x8 obj/ble_advdata.o
+ .text.sd_ble_gatts_value_set
+                0x00016b38        0x8 obj/ble_advdata.o
+ .text.sd_ble_gatts_value_get
+                0x00016b40        0x8 obj/ble_advdata.o
+ .text.sd_ble_gatts_hvx
+                0x00016b48        0x8 obj/ble_advdata.o
+ .text.sd_ble_gatts_service_changed
+                0x00016b50        0x8 obj/ble_advdata.o
+ .text.sd_ble_gatts_rw_authorize_reply
+                0x00016b58        0x8 obj/ble_advdata.o
+ .text.sd_ble_gatts_sys_attr_set
+                0x00016b60        0x8 obj/ble_advdata.o
+ .text.sd_ble_gatts_sys_attr_get
+                0x00016b68        0x8 obj/ble_advdata.o
+ .text.sd_ble_enable
+                0x00016b70        0x8 obj/ble_advdata.o
+ .text.sd_ble_evt_get
+                0x00016b78        0x8 obj/ble_advdata.o
+ .text.sd_ble_tx_buffer_count_get
+                0x00016b80        0x8 obj/ble_advdata.o
+ .text.sd_ble_uuid_vs_add
+                0x00016b88        0x8 obj/ble_advdata.o
+ .text.sd_ble_uuid_decode
+                0x00016b90        0x8 obj/ble_advdata.o
+ .text.sd_ble_uuid_encode
+                0x00016b98        0x8 obj/ble_advdata.o
+ .text.sd_ble_version_get
+                0x00016ba0        0x8 obj/ble_advdata.o
+ .text.sd_ble_user_mem_reply
+                0x00016ba8        0x8 obj/ble_advdata.o
+ .text.sd_ble_opt_set
+                0x00016bb0        0x8 obj/ble_advdata.o
+ .text.sd_ble_opt_get
+                0x00016bb8        0x8 obj/ble_advdata.o
+ .text.uint16_encode
+                0x00016bc0       0x34 obj/ble_advdata.o
+ .text.name_encode
+                0x00016bf4      0x140 obj/ble_advdata.o
+ .text.appearance_encode
+                0x00016d34       0x8c obj/ble_advdata.o
+ .text.uint8_array_encode
+                0x00016dc0       0xa4 obj/ble_advdata.o
+ .text.tx_power_level_encode
+                0x00016e64       0x70 obj/ble_advdata.o
+ .text.uuid_list_sized_encode
+                0x00016ed4      0x170 obj/ble_advdata.o
+ .text.uuid_list_encode
+                0x00017044       0x6c obj/ble_advdata.o
+ .text.conn_int_check
+                0x000170b0       0x80 obj/ble_advdata.o
+ .text.conn_int_encode
+                0x00017130       0xac obj/ble_advdata.o
+ .text.manuf_specific_data_encode
+                0x000171dc       0xd0 obj/ble_advdata.o
+ .text.service_data_encode
+                0x000172ac      0x104 obj/ble_advdata.o
+ .text.adv_data_encode
+                0x000173b0      0x1b8 obj/ble_advdata.o
+ .text.advdata_check
+                0x00017568       0x34 obj/ble_advdata.o
+ .text.srdata_check
+                0x0001759c       0x20 obj/ble_advdata.o
+ .text.ble_advdata_set
+                0x000175bc       0xcc obj/ble_advdata.o
+                0x000175bc                ble_advdata_set
+ .text          0x00017688        0x0 obj/softdevice_handler.o
+ .text.sd_mutex_new
+                0x00017688        0x8 obj/softdevice_handler.o
+ .text.sd_mutex_acquire
+                0x00017690        0x8 obj/softdevice_handler.o
+ .text.sd_mutex_release
+                0x00017698        0x8 obj/softdevice_handler.o
+ .text.sd_nvic_EnableIRQ
+                0x000176a0        0x8 obj/softdevice_handler.o
+ .text.sd_nvic_DisableIRQ
+                0x000176a8        0x8 obj/softdevice_handler.o
+ .text.sd_nvic_GetPendingIRQ
+                0x000176b0        0x8 obj/softdevice_handler.o
+ .text.sd_nvic_SetPendingIRQ
+                0x000176b8        0x8 obj/softdevice_handler.o
+ .text.sd_nvic_ClearPendingIRQ
+                0x000176c0        0x8 obj/softdevice_handler.o
+ .text.sd_nvic_SetPriority
+                0x000176c8        0x8 obj/softdevice_handler.o
+ .text.sd_nvic_GetPriority
+                0x000176d0        0x8 obj/softdevice_handler.o
+ .text.sd_nvic_SystemReset
+                0x000176d8        0x8 obj/softdevice_handler.o
+ .text.sd_nvic_critical_region_enter
+                0x000176e0        0x8 obj/softdevice_handler.o
+ .text.sd_nvic_critical_region_exit
+                0x000176e8        0x8 obj/softdevice_handler.o
+ .text.sd_rand_application_pool_capacity_get
+                0x000176f0        0x8 obj/softdevice_handler.o
+ .text.sd_rand_application_bytes_available_get
+                0x000176f8        0x8 obj/softdevice_handler.o
+ .text.sd_rand_application_vector_get
+                0x00017700        0x8 obj/softdevice_handler.o
+ .text.sd_power_reset_reason_get
+                0x00017708        0x8 obj/softdevice_handler.o
+ .text.sd_power_reset_reason_clr
+                0x00017710        0x8 obj/softdevice_handler.o
+ .text.sd_power_mode_set
+                0x00017718        0x8 obj/softdevice_handler.o
+ .text.sd_power_system_off
+                0x00017720        0x8 obj/softdevice_handler.o
+ .text.sd_power_pof_enable
+                0x00017728        0x8 obj/softdevice_handler.o
+ .text.sd_power_pof_threshold_set
+                0x00017730        0x8 obj/softdevice_handler.o
+ .text.sd_power_ramon_set
+                0x00017738        0x8 obj/softdevice_handler.o
+ .text.sd_power_ramon_clr
+                0x00017740        0x8 obj/softdevice_handler.o
+ .text.sd_power_ramon_get
+                0x00017748        0x8 obj/softdevice_handler.o
+ .text.sd_power_gpregret_set
+                0x00017750        0x8 obj/softdevice_handler.o
+ .text.sd_power_gpregret_clr
+                0x00017758        0x8 obj/softdevice_handler.o
+ .text.sd_power_gpregret_get
+                0x00017760        0x8 obj/softdevice_handler.o
+ .text.sd_power_dcdc_mode_set
+                0x00017768        0x8 obj/softdevice_handler.o
+ .text.sd_clock_hfclk_request
+                0x00017770        0x8 obj/softdevice_handler.o
+ .text.sd_clock_hfclk_release
+                0x00017778        0x8 obj/softdevice_handler.o
+ .text.sd_clock_hfclk_is_running
+                0x00017780        0x8 obj/softdevice_handler.o
+ .text.sd_app_evt_wait
+                0x00017788        0x8 obj/softdevice_handler.o
+ .text.sd_ppi_channel_enable_get
+                0x00017790        0x8 obj/softdevice_handler.o
+ .text.sd_ppi_channel_enable_set
+                0x00017798        0x8 obj/softdevice_handler.o
+ .text.sd_ppi_channel_enable_clr
+                0x000177a0        0x8 obj/softdevice_handler.o
+ .text.sd_ppi_channel_assign
+                0x000177a8        0x8 obj/softdevice_handler.o
+ .text.sd_ppi_group_task_enable
+                0x000177b0        0x8 obj/softdevice_handler.o
+ .text.sd_ppi_group_task_disable
+                0x000177b8        0x8 obj/softdevice_handler.o
+ .text.sd_ppi_group_assign
+                0x000177c0        0x8 obj/softdevice_handler.o
+ .text.sd_ppi_group_get
+                0x000177c8        0x8 obj/softdevice_handler.o
+ .text.sd_radio_notification_cfg_set
+                0x000177d0        0x8 obj/softdevice_handler.o
+ .text.sd_ecb_block_encrypt
+                0x000177d8        0x8 obj/softdevice_handler.o
+ .text.sd_evt_get
+                0x000177e0        0x8 obj/softdevice_handler.o
+ .text.sd_temp_get
+                0x000177e8        0x8 obj/softdevice_handler.o
+ .text.sd_flash_write
+                0x000177f0        0x8 obj/softdevice_handler.o
+ .text.sd_flash_page_erase
+                0x000177f8        0x8 obj/softdevice_handler.o
+ .text.sd_flash_protect
+                0x00017800        0x8 obj/softdevice_handler.o
+ .text.sd_radio_session_open
+                0x00017808        0x8 obj/softdevice_handler.o
+ .text.sd_radio_session_close
+                0x00017810        0x8 obj/softdevice_handler.o
+ .text.sd_radio_request
+                0x00017818        0x8 obj/softdevice_handler.o
+ .text.sd_softdevice_enable
+                0x00017820        0x8 obj/softdevice_handler.o
+ .text.sd_softdevice_disable
+                0x00017828        0x8 obj/softdevice_handler.o
+ .text.sd_softdevice_is_enabled
+                0x00017830        0x8 obj/softdevice_handler.o
+ .text.sd_softdevice_vector_table_base_set
+                0x00017838        0x8 obj/softdevice_handler.o
+ .text.is_word_aligned
+                0x00017840       0x1c obj/softdevice_handler.o
+ .text.sd_ble_gap_address_set
+                0x0001785c        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gap_address_get
+                0x00017864        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gap_adv_data_set
+                0x0001786c        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gap_adv_start
+                0x00017874        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gap_adv_stop
+                0x0001787c        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gap_conn_param_update
+                0x00017884        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gap_disconnect
+                0x0001788c        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gap_tx_power_set
+                0x00017894        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gap_appearance_set
+                0x0001789c        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gap_appearance_get
+                0x000178a4        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gap_ppcp_set
+                0x000178ac        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gap_ppcp_get
+                0x000178b4        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gap_device_name_set
+                0x000178bc        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gap_device_name_get
+                0x000178c4        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gap_authenticate
+                0x000178cc        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gap_sec_params_reply
+                0x000178d4        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gap_auth_key_reply
+                0x000178dc        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gap_sec_info_reply
+                0x000178e4        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gap_conn_sec_get
+                0x000178ec        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gap_rssi_start
+                0x000178f4        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gap_rssi_stop
+                0x000178fc        0x8 obj/softdevice_handler.o
+ .text.sd_ble_l2cap_cid_register
+                0x00017904        0x8 obj/softdevice_handler.o
+ .text.sd_ble_l2cap_cid_unregister
+                0x0001790c        0x8 obj/softdevice_handler.o
+ .text.sd_ble_l2cap_tx
+                0x00017914        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gattc_primary_services_discover
+                0x0001791c        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gattc_relationships_discover
+                0x00017924        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gattc_characteristics_discover
+                0x0001792c        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gattc_descriptors_discover
+                0x00017934        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gattc_char_value_by_uuid_read
+                0x0001793c        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gattc_read
+                0x00017944        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gattc_char_values_read
+                0x0001794c        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gattc_write
+                0x00017954        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gattc_hv_confirm
+                0x0001795c        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gatts_service_add
+                0x00017964        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gatts_include_add
+                0x0001796c        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gatts_characteristic_add
+                0x00017974        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gatts_descriptor_add
+                0x0001797c        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gatts_value_set
+                0x00017984        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gatts_value_get
+                0x0001798c        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gatts_hvx
+                0x00017994        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gatts_service_changed
+                0x0001799c        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gatts_rw_authorize_reply
+                0x000179a4        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gatts_sys_attr_set
+                0x000179ac        0x8 obj/softdevice_handler.o
+ .text.sd_ble_gatts_sys_attr_get
+                0x000179b4        0x8 obj/softdevice_handler.o
+ .text.sd_ble_enable
+                0x000179bc        0x8 obj/softdevice_handler.o
+ .text.sd_ble_evt_get
+                0x000179c4        0x8 obj/softdevice_handler.o
+ .text.sd_ble_tx_buffer_count_get
+                0x000179cc        0x8 obj/softdevice_handler.o
+ .text.sd_ble_uuid_vs_add
+                0x000179d4        0x8 obj/softdevice_handler.o
+ .text.sd_ble_uuid_decode
+                0x000179dc        0x8 obj/softdevice_handler.o
+ .text.sd_ble_uuid_encode
+                0x000179e4        0x8 obj/softdevice_handler.o
+ .text.sd_ble_version_get
+                0x000179ec        0x8 obj/softdevice_handler.o
+ .text.sd_ble_user_mem_reply
+                0x000179f4        0x8 obj/softdevice_handler.o
+ .text.sd_ble_opt_set
+                0x000179fc        0x8 obj/softdevice_handler.o
+ .text.sd_ble_opt_get
+                0x00017a04        0x8 obj/softdevice_handler.o
+ .text.softdevice_assertion_handler
+                0x00017a0c       0x28 obj/softdevice_handler.o
+                0x00017a0c                softdevice_assertion_handler
+ .text.intern_softdevice_events_execute
+                0x00017a34      0x118 obj/softdevice_handler.o
+                0x00017a34                intern_softdevice_events_execute
+ .text.softdevice_handler_init
+                0x00017b4c       0x8c obj/softdevice_handler.o
+                0x00017b4c                softdevice_handler_init
+ .text.softdevice_handler_sd_disable
+                0x00017bd8       0x28 obj/softdevice_handler.o
+                0x00017bd8                softdevice_handler_sd_disable
+ .text.softdevice_ble_evt_handler_set
+                0x00017c00       0x28 obj/softdevice_handler.o
+                0x00017c00                softdevice_ble_evt_handler_set
+ .text.softdevice_sys_evt_handler_set
+                0x00017c28       0x28 obj/softdevice_handler.o
+                0x00017c28                softdevice_sys_evt_handler_set
+ .text.SWI2_IRQHandler
+                0x00017c50       0x48 obj/softdevice_handler.o
+                0x00017c50                SWI2_IRQHandler
+ .text          0x00017c98        0x0 obj/ble_debug_assert_handler.o
+ .text.ble_debug_assert_handler
+                0x00017c98       0x48 obj/ble_debug_assert_handler.o
+                0x00017c98                ble_debug_assert_handler
+ .text          0x00017ce0        0x0 obj/system_nrf51.o
+ .text.SystemCoreClockUpdate
+                0x00017ce0       0x18 obj/system_nrf51.o
+                0x00017ce0                SystemCoreClockUpdate
+ .text.SystemInit
+                0x00017cf8       0x44 obj/system_nrf51.o
+                0x00017cf8                SystemInit
+ .text.is_manual_peripheral_setup_needed
+                0x00017d3c       0x80 obj/system_nrf51.o
+ .text.is_disabled_in_debug_needed
+                0x00017dbc       0x4c obj/system_nrf51.o
+ .text          0x00017e08       0x54 obj/gcc_startup_nrf51.o
+                0x00017e08                Reset_Handler
+                0x00017e50                NMI_Handler
+                0x00017e52                HardFault_Handler
+                0x00017e54                SVC_Handler
+                0x00017e56                PendSV_Handler
+                0x00017e58                SysTick_Handler
+                0x00017e5a                GPIOTE_IRQHandler
+                0x00017e5a                RTC0_IRQHandler
+                0x00017e5a                POWER_CLOCK_IRQHandler
+                0x00017e5a                SPI0_TWI0_IRQHandler
+                0x00017e5a                LPCOMP_IRQHandler
+                0x00017e5a                SWI4_IRQHandler
+                0x00017e5a                TEMP_IRQHandler
+                0x00017e5a                QDEC_IRQHandler
+                0x00017e5a                UART0_IRQHandler
+                0x00017e5a                SWI5_IRQHandler
+                0x00017e5a                TIMER0_IRQHandler
+                0x00017e5a                RADIO_IRQHandler
+                0x00017e5a                SWI0_IRQHandler
+                0x00017e5a                TIMER1_IRQHandler
+                0x00017e5a                ECB_IRQHandler
+                0x00017e5a                Default_Handler
+                0x00017e5a                ADC_IRQHandler
+                0x00017e5a                SWI3_IRQHandler
+                0x00017e5a                CCM_AAR_IRQHandler
+                0x00017e5a                WDT_IRQHandler
+                0x00017e5a                TIMER2_IRQHandler
+                0x00017e5a                RNG_IRQHandler
+                0x00017e5a                SPI1_TWI1_IRQHandler
+                0x00017e5a                RTC1_IRQHandler
+                0x00017e5a                SWI1_IRQHandler
+ .text          0x00017e5c        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-__atexit.o)
+ .text.__register_exitproc
+                0x00017e5c       0xc4 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-__atexit.o)
+                0x00017e5c                __register_exitproc
+ .text          0x00017f20        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-errno.o)
+ .text.__errno  0x00017f20        0xc c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-errno.o)
+                0x00017f20                __errno
+ .text          0x00017f2c        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-exit.o)
+ .text.exit     0x00017f2c       0x20 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-exit.o)
+                0x00017f2c                exit
+ .text          0x00017f4c        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-fini.o)
+ .text.__libc_fini_array
+                0x00017f4c       0x60 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-fini.o)
+                0x00017f4c                __libc_fini_array
+ .text          0x00017fac        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-impure.o)
+ .text          0x00017fac        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-init.o)
+ .text.__libc_init_array
+                0x00017fac       0x90 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-init.o)
+                0x00017fac                __libc_init_array
+ .text          0x0001803c        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-memcpy.o)
+ .text.memcpy   0x0001803c      0x144 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-memcpy.o)
+                0x0001803c                memcpy
+ .text          0x00018180        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-memset.o)
+ .text.memset   0x00018180      0x118 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-memset.o)
+                0x00018180                memset
+ .text          0x00018298        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strlen.o)
+ .text.strlen   0x00018298       0x10 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strlen.o)
+                0x00018298                strlen
+ .text          0x000182a8        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strncpy.o)
+ .text.strncpy  0x000182a8      0x124 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strncpy.o)
+                0x000182a8                strncpy
+ .text          0x000183cc        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-__call_atexit.o)
+ .text.startup.register_fini
+                0x000183cc       0x18 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-__call_atexit.o)
+ .text.__call_exitprocs
+                0x000183e4      0x264 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-__call_atexit.o)
+                0x000183e4                __call_exitprocs
+ .text          0x00018648        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-atexit.o)
+ .text.atexit   0x00018648       0x10 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-atexit.o)
+                0x00018648                atexit
+ .text          0x00018658        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtend.o
+ .text          0x00018658        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtn.o
+ *(.init)
+ .init          0x00018658        0x4 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crti.o
+                0x00018658                _init
+ .init          0x0001865c        0x8 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtn.o
+ *(.fini)
+ .fini          0x00018664        0x4 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crti.o
+                0x00018664                _fini
+ .fini          0x00018668        0x8 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtn.o
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o *crtend?.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+ *(.rodata*)
+ .rodata        0x00018670       0x14 obj/main.o
+ .rodata        0x00018684       0x28 obj/ble_srv_common.o
+ .rodata        0x000186ac       0x28 obj/softdevice_handler.o
+ .rodata.str1.4
+                0x000186d4        0x4 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x000186d8        0x4 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-impure.o)
+                0x000186d8                _global_impure_ptr
+ *(.eh_frame*)
+ .eh_frame      0x000186dc        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtbegin.o
+ .eh_frame      0x000186dc        0x4 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtend.o
+
+.glue_7         0x000186e0        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x000186e0        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x000186e0        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x000186e0        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x000186e0        0x0
+ .iplt          0x00000000        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtbegin.o
+
+.ARM.extab      0x000186e0        0x0
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+ .ARM.extab     0x000186e0        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .ARM.extab     0x000186e0        0x0 obj/gcc_startup_nrf51.o
+                0x000186e0                __exidx_start = .
+
+.ARM.exidx      0x000186e0        0x8
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+ .ARM.exidx     0x000186e0        0x8 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .ARM.exidx     0x000186e8        0x0 obj/gcc_startup_nrf51.o
+                                  0x8 (size before relaxing)
+                0x000186e8                __exidx_end = .
+                0x000186e8                __etext = .
+
+.rel.dyn        0x000186e8        0x0
+ .rel.iplt      0x00000000        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtbegin.o
+
+.data           0x20002000      0x45c load address 0x000186e8
+                0x20002000                __data_start__ = .
+ *(vtable)
+ *(.data*)
+ .data          0x20002000        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crti.o
+ .data          0x20002000        0x4 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtbegin.o
+                0x20002000                __dso_handle
+ .data          0x20002004        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .data          0x20002004       0x18 obj/main.o
+ .data          0x2000201c        0x0 obj/syscall.o
+ .data          0x2000201c        0x0 obj/ble_srv_common.o
+ .data          0x2000201c        0x0 obj/ble_advdata.o
+ .data          0x2000201c        0x0 obj/softdevice_handler.o
+ .data          0x2000201c        0x0 obj/ble_debug_assert_handler.o
+ .data          0x2000201c        0x4 obj/system_nrf51.o
+                0x2000201c                SystemCoreClock
+ .data          0x20002020        0x0 obj/gcc_startup_nrf51.o
+ .data          0x20002020        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-__atexit.o)
+ .data          0x20002020        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-errno.o)
+ .data          0x20002020        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-exit.o)
+ .data          0x20002020        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-fini.o)
+ .data          0x20002020        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-impure.o)
+ .data.impure_data
+                0x20002020      0x428 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x20002448        0x4 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-impure.o)
+                0x20002448                _impure_ptr
+ .data          0x2000244c        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-init.o)
+ .data          0x2000244c        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-memcpy.o)
+ .data          0x2000244c        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-memset.o)
+ .data          0x2000244c        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strlen.o)
+ .data          0x2000244c        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strncpy.o)
+ .data          0x2000244c        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-__call_atexit.o)
+ .data          0x2000244c        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-atexit.o)
+ .data          0x2000244c        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtend.o
+ .data          0x2000244c        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtn.o
+                0x2000244c                . = ALIGN (0x4)
+                0x2000244c                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                0x2000244c                PROVIDE (__preinit_array_end, .)
+                0x2000244c                . = ALIGN (0x4)
+                0x2000244c                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ .init_array.00000
+                0x2000244c        0x4 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-__call_atexit.o)
+ *(.init_array)
+ .init_array    0x20002450        0x4 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtbegin.o
+                0x20002454                PROVIDE (__init_array_end, .)
+                0x20002454                . = ALIGN (0x4)
+                0x20002454                PROVIDE (__fini_array_start, .)
+ *(SORT(.fini_array.*))
+ *(.fini_array)
+ .fini_array    0x20002454        0x4 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtbegin.o
+                0x20002458                PROVIDE (__fini_array_end, .)
+ *(.jcr)
+ .jcr           0x20002458        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtbegin.o
+ .jcr           0x20002458        0x4 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtend.o
+                0x2000245c                . = ALIGN (0x4)
+                0x2000245c                __data_end__ = .
+
+.igot.plt       0x2000245c        0x0 load address 0x00018b44
+ .igot.plt      0x00000000        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtbegin.o
+
+.bss            0x2000245c      0x120 load address 0x00018b44
+                0x2000245c                . = ALIGN (0x4)
+                0x2000245c                __bss_start__ = .
+ *(.bss*)
+ .bss           0x2000245c        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crti.o
+ .bss           0x2000245c       0x1c c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtbegin.o
+ .bss           0x20002478        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .bss           0x20002478       0x64 obj/main.o
+ .bss           0x200024dc        0x4 obj/syscall.o
+ .bss           0x200024e0        0x0 obj/ble_srv_common.o
+ .bss           0x200024e0        0x0 obj/ble_advdata.o
+ .bss           0x200024e0       0x14 obj/softdevice_handler.o
+ .bss           0x200024f4       0x88 obj/ble_debug_assert_handler.o
+ .bss           0x2000257c        0x0 obj/system_nrf51.o
+ .bss           0x2000257c        0x0 obj/gcc_startup_nrf51.o
+ .bss           0x2000257c        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-__atexit.o)
+ .bss           0x2000257c        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-errno.o)
+ .bss           0x2000257c        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-exit.o)
+ .bss           0x2000257c        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-fini.o)
+ .bss           0x2000257c        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-impure.o)
+ .bss           0x2000257c        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-init.o)
+ .bss           0x2000257c        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-memcpy.o)
+ .bss           0x2000257c        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-memset.o)
+ .bss           0x2000257c        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strlen.o)
+ .bss           0x2000257c        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strncpy.o)
+ .bss           0x2000257c        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-__call_atexit.o)
+ .bss           0x2000257c        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-atexit.o)
+ .bss           0x2000257c        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtend.o
+ .bss           0x2000257c        0x0 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtn.o
+ *(COMMON)
+                0x2000257c                . = ALIGN (0x4)
+                0x2000257c                __bss_end__ = .
+
+.heap           0x20002580        0x0
+                0x20002580                __end__ = .
+                0x20002580                end = __end__
+ *(.heap*)
+ .heap          0x20002580        0x0 obj/gcc_startup_nrf51.o
+                0x20002580                __HeapLimit = .
+
+.stack_dummy    0x20002580      0x800
+ *(.stack*)
+ .stack         0x20002580      0x800 obj/gcc_startup_nrf51.o
+                0x20004000                __StackTop = (ORIGIN (RAM) + 0x2000)
+                0x20003800                __StackLimit = (__StackTop - SIZEOF (.stack_dummy))
+                0x20004000                PROVIDE (__stack, __StackTop)
+                0x00000001                ASSERT ((__StackLimit >= __HeapLimit), region RAM overflowed with stack)
+OUTPUT(obj/ble_app_beacon_s110_xxaa.elf elf32-littlearm)
+
+.ARM.attributes
+                0x00000000       0x28
+ .ARM.attributes
+                0x00000000       0x1e c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crti.o
+ .ARM.attributes
+                0x0000001e       0x2c c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtbegin.o
+ .ARM.attributes
+                0x0000004a       0x1c c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .ARM.attributes
+                0x00000066       0x31 obj/main.o
+ .ARM.attributes
+                0x00000097       0x31 obj/syscall.o
+ .ARM.attributes
+                0x000000c8       0x31 obj/ble_srv_common.o
+ .ARM.attributes
+                0x000000f9       0x31 obj/ble_advdata.o
+ .ARM.attributes
+                0x0000012a       0x31 obj/softdevice_handler.o
+ .ARM.attributes
+                0x0000015b       0x31 obj/ble_debug_assert_handler.o
+ .ARM.attributes
+                0x0000018c       0x31 obj/system_nrf51.o
+ .ARM.attributes
+                0x000001bd       0x1b obj/gcc_startup_nrf51.o
+ .ARM.attributes
+                0x000001d8       0x2c c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-__atexit.o)
+ .ARM.attributes
+                0x00000204       0x2c c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-errno.o)
+ .ARM.attributes
+                0x00000230       0x2c c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-exit.o)
+ .ARM.attributes
+                0x0000025c       0x2c c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-fini.o)
+ .ARM.attributes
+                0x00000288       0x2c c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-impure.o)
+ .ARM.attributes
+                0x000002b4       0x2c c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-init.o)
+ .ARM.attributes
+                0x000002e0       0x2c c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-memcpy.o)
+ .ARM.attributes
+                0x0000030c       0x2c c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-memset.o)
+ .ARM.attributes
+                0x00000338       0x2c c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strlen.o)
+ .ARM.attributes
+                0x00000364       0x2c c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strncpy.o)
+ .ARM.attributes
+                0x00000390       0x2c c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-__call_atexit.o)
+ .ARM.attributes
+                0x000003bc       0x2c c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-atexit.o)
+ .ARM.attributes
+                0x000003e8       0x2c c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtend.o
+ .ARM.attributes
+                0x00000414       0x1e c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtn.o
+
+.comment        0x00000000       0x70
+ .comment       0x00000000       0x70 obj/main.o
+                                 0x71 (size before relaxing)
+ .comment       0x00000000       0x71 obj/syscall.o
+ .comment       0x00000000       0x71 obj/ble_srv_common.o
+ .comment       0x00000000       0x71 obj/ble_advdata.o
+ .comment       0x00000000       0x71 obj/softdevice_handler.o
+ .comment       0x00000000       0x71 obj/ble_debug_assert_handler.o
+ .comment       0x00000000       0x71 obj/system_nrf51.o
+
+.debug_info     0x00000000     0xaa4b
+ .debug_info    0x00000000     0x330a obj/main.o
+ .debug_info    0x0000330a      0xd3a obj/syscall.o
+ .debug_info    0x00004044      0xaab obj/ble_srv_common.o
+ .debug_info    0x00004aef     0x2290 obj/ble_advdata.o
+ .debug_info    0x00006d7f     0x3941 obj/softdevice_handler.o
+ .debug_info    0x0000a6c0      0x15a obj/ble_debug_assert_handler.o
+ .debug_info    0x0000a81a      0x1c9 obj/system_nrf51.o
+ .debug_info    0x0000a9e3       0x68 obj/gcc_startup_nrf51.o
+
+.debug_abbrev   0x00000000      0xe66
+ .debug_abbrev  0x00000000      0x338 obj/main.o
+ .debug_abbrev  0x00000338      0x1ec obj/syscall.o
+ .debug_abbrev  0x00000524      0x1ad obj/ble_srv_common.o
+ .debug_abbrev  0x000006d1      0x2bb obj/ble_advdata.o
+ .debug_abbrev  0x0000098c      0x32a obj/softdevice_handler.o
+ .debug_abbrev  0x00000cb6       0xb8 obj/ble_debug_assert_handler.o
+ .debug_abbrev  0x00000d6e       0xe4 obj/system_nrf51.o
+ .debug_abbrev  0x00000e52       0x14 obj/gcc_startup_nrf51.o
+
+.debug_loc      0x00000000      0xa94
+ .debug_loc     0x00000000      0x272 obj/main.o
+ .debug_loc     0x00000272      0x1c0 obj/syscall.o
+ .debug_loc     0x00000432       0x70 obj/ble_srv_common.o
+ .debug_loc     0x000004a2      0x34a obj/ble_advdata.o
+ .debug_loc     0x000007ec      0x1c0 obj/softdevice_handler.o
+ .debug_loc     0x000009ac       0x38 obj/ble_debug_assert_handler.o
+ .debug_loc     0x000009e4       0xb0 obj/system_nrf51.o
+
+.debug_aranges  0x00000000      0xb80
+ .debug_aranges
+                0x00000000      0x3e0 obj/main.o
+ .debug_aranges
+                0x000003e0       0x58 obj/syscall.o
+ .debug_aranges
+                0x00000438       0xd0 obj/ble_srv_common.o
+ .debug_aranges
+                0x00000508      0x240 obj/ble_advdata.o
+ .debug_aranges
+                0x00000748      0x3c0 obj/softdevice_handler.o
+ .debug_aranges
+                0x00000b08       0x20 obj/ble_debug_assert_handler.o
+ .debug_aranges
+                0x00000b28       0x38 obj/system_nrf51.o
+ .debug_aranges
+                0x00000b60       0x20 obj/gcc_startup_nrf51.o
+
+.debug_ranges   0x00000000      0xaf0
+ .debug_ranges  0x00000000      0x3d0 obj/main.o
+ .debug_ranges  0x000003d0       0x48 obj/syscall.o
+ .debug_ranges  0x00000418       0xc0 obj/ble_srv_common.o
+ .debug_ranges  0x000004d8      0x230 obj/ble_advdata.o
+ .debug_ranges  0x00000708      0x3b0 obj/softdevice_handler.o
+ .debug_ranges  0x00000ab8       0x10 obj/ble_debug_assert_handler.o
+ .debug_ranges  0x00000ac8       0x28 obj/system_nrf51.o
+
+.debug_line     0x00000000     0x235b
+ .debug_line    0x00000000      0xaf4 obj/main.o
+ .debug_line    0x00000af4      0x19d obj/syscall.o
+ .debug_line    0x00000c91      0x286 obj/ble_srv_common.o
+ .debug_line    0x00000f17      0x76e obj/ble_advdata.o
+ .debug_line    0x00001685      0xa3d obj/softdevice_handler.o
+ .debug_line    0x000020c2       0xe4 obj/ble_debug_assert_handler.o
+ .debug_line    0x000021a6      0x12f obj/system_nrf51.o
+ .debug_line    0x000022d5       0x86 obj/gcc_startup_nrf51.o
+
+.debug_str      0x00000000     0x3d37
+ .debug_str     0x00000000     0x2b04 obj/main.o
+                               0x2cba (size before relaxing)
+ .debug_str     0x00002b04      0x4ac obj/syscall.o
+                                0x61a (size before relaxing)
+ .debug_str     0x00002fb0       0xdd obj/ble_srv_common.o
+                                0x8a4 (size before relaxing)
+ .debug_str     0x0000308d      0x266 obj/ble_advdata.o
+                               0x190e (size before relaxing)
+ .debug_str     0x000032f3      0x8f9 obj/softdevice_handler.o
+                               0x2e42 (size before relaxing)
+ .debug_str     0x00003bec       0x70 obj/ble_debug_assert_handler.o
+                                0x19d (size before relaxing)
+ .debug_str     0x00003c5c       0xdb obj/system_nrf51.o
+                                0x1ec (size before relaxing)
+
+.debug_frame    0x00000000     0x1afc
+ .debug_frame   0x00000000      0x850 obj/main.o
+ .debug_frame   0x00000850      0x110 obj/syscall.o
+ .debug_frame   0x00000960      0x1a0 obj/ble_srv_common.o
+ .debug_frame   0x00000b00      0x550 obj/ble_advdata.o
+ .debug_frame   0x00001050      0x7e0 obj/softdevice_handler.o
+ .debug_frame   0x00001830       0x30 obj/ble_debug_assert_handler.o
+ .debug_frame   0x00001860       0x80 obj/system_nrf51.o
+ .debug_frame   0x000018e0       0x38 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-__atexit.o)
+ .debug_frame   0x00001918       0x20 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-errno.o)
+ .debug_frame   0x00001938       0x28 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-exit.o)
+ .debug_frame   0x00001960       0x34 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-fini.o)
+ .debug_frame   0x00001994       0x30 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-init.o)
+ .debug_frame   0x000019c4       0x34 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-memcpy.o)
+ .debug_frame   0x000019f8       0x30 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-memset.o)
+ .debug_frame   0x00001a28       0x20 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strlen.o)
+ .debug_frame   0x00001a48       0x38 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strncpy.o)
+ .debug_frame   0x00001a80       0x54 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-__call_atexit.o)
+ .debug_frame   0x00001ad4       0x28 c:/gnuarm/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-atexit.o)
