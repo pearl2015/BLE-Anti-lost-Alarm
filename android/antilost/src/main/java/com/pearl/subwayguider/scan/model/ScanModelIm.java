@@ -138,7 +138,7 @@ public class ScanModelIm extends Service implements ScanModel {
 
 
 
-                    if(!name.equals("unknown device")) {
+                    //if(!name.equals("unknown device")) {
 
                         //定义一个intent
                         Intent intent = new Intent().setAction(LocateActivity.action).putExtra("rssi", rssi);
@@ -146,7 +146,7 @@ public class ScanModelIm extends Service implements ScanModel {
                         context.sendBroadcast(intent);
                         BleDevice newdevice = new BleDevice(name, major_s, minor_s, txpw, rssi);
                         addDevice(newdevice);
-                    }
+                 //   }
                 }
             });
         }
