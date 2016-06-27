@@ -126,33 +126,27 @@ public class ScanModelIm extends Service implements ScanModel {
                             | (scanRecord[28] & 0xFF);
                     byte txpw = scanRecord[29];
 
-
                     String major_s = "0" + Tools.decTohex(major + "");
                     String minor_s = "0" + Tools.decTohex(minor + "");
 
-
                     String locate = major_s + minor_s;
-
                     String name = Tools.SampleBleNames.lookup(locate);
 
-
-
-
-                    if(!name.equals("unknown device")) {
+               //     if (!name.equals("unknown device")) {
 
                         //定义一个intent
-                        Intent intent = new Intent().setAction(LocateActivity.action).putExtra("rssi", rssi);
+                        Intent intent = new Intent().setAction(LocateActivity.action)
+                                .putExtra("rssi", rssi);
                         //广播出去
                         context.sendBroadcast(intent);
                         BleDevice newdevice = new BleDevice(name, major_s, minor_s, txpw, rssi);
                         addDevice(newdevice);
-                    }
+                   // }
                 }
             });
         }
 
     };
-
 
     @Override
     public ArrayList<BleDevice> findBleDevices(final boolean enable) {
